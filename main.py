@@ -23,11 +23,10 @@ def find_mismatch(text):
         return "Success"
 
 def main():
-    #text = input()
     input_type = input()
     if "F" in input_type:
-        name = input()
-        with open (name) as f:
+        input_name = input()
+        with open (input_name) as f:
             text = f.read()
             mismatch = find_mismatch(text)
     elif "I" in input_type:
